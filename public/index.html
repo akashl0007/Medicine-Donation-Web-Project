@@ -106,7 +106,7 @@
           // var url = "/signup?txtEmail=" + $("#txtEmail").val() + "&&txtPass=" + $("#txtPass").val() + "&&utype=" + $("#utype").val();
           var url="/signup";
           alert("URL  bn gyi guys ");
-          $.get(url, function (resp) {
+          $.post(url, function (resp) {
             alert("mai to ja rha hu ");
             if (parseInt(resp) == 1) {
               alert("Sign Up Successfully");
