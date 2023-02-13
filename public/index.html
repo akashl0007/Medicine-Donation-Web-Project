@@ -105,6 +105,8 @@
 
           if (e.test(email) == true && p.test(pwd) == true) {
             var url = "/signup?txtEmail=" + $("#txtEmail").val() + "&&txtPass=" + $("#txtPass").val() + "&&utype=" + $("#utype").val();
+            
+            alert("URL  bn gyi guys ");
             $.get(url, function (resp) {
               alert("mai to ja rha hu ");
               if (parseInt(resp) == 1) {
